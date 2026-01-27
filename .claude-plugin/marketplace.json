@@ -1,0 +1,59 @@
+{
+  "name": "mathviz-agent",
+  "owner": {
+    "name": "Ahmad Sofi-Mahmudi",
+    "email": "choxos@users.noreply.github.com",
+    "url": "https://github.com/choxos"
+  },
+  "metadata": {
+    "description": "Production-quality Manim animation agent for creating 3Blue1Brown-style mathematical visualizations with 6 specialized agents, 4 workflow commands, and 6 methodology skills",
+    "version": "1.0.0",
+    "license": "MIT"
+  },
+  "plugins": [
+    {
+      "name": "manim-viz",
+      "source": "./plugins/manim-viz",
+      "description": "Create, review, and render production-quality mathematical animations using Manim Community Edition",
+      "version": "1.0.0",
+      "category": "visualization",
+      "strict": false,
+      "agents": [
+        "./agents/viz-architect.md",
+        "./agents/scene-designer.md",
+        "./agents/animation-specialist.md",
+        "./agents/math-renderer.md",
+        "./agents/camera-specialist.md",
+        "./agents/code-reviewer.md"
+      ],
+      "commands": [
+        "./commands/create-scene.md",
+        "./commands/create-video.md",
+        "./commands/review-animation.md",
+        "./commands/render-preview.md"
+      ],
+      "skills": [
+        "./skills/manim-fundamentals",
+        "./skills/animation-patterns",
+        "./skills/camera-techniques",
+        "./skills/math-typography",
+        "./skills/component-design",
+        "./skills/production-quality"
+      ],
+      "keywords": [
+        "manim",
+        "animation",
+        "mathematics",
+        "visualization",
+        "3blue1brown",
+        "educational-video",
+        "python",
+        "latex",
+        "graphics",
+        "motion-graphics",
+        "mathematical-animation",
+        "data-visualization"
+      ]
+    }
+  ]
+}
