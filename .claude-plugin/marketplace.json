@@ -12,8 +12,8 @@
   },
   "plugins": [
     {
-      "name": "manim-viz",
-      "source": "./plugins/manim-viz",
+      "name": "mathviz",
+      "source": "./plugins/mathviz",
       "description": "Create, review, and render production-quality mathematical animations using Manim Community Edition",
       "version": "1.0.0",
       "category": "visualization",

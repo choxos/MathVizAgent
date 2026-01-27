@@ -8,7 +8,7 @@ A [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) plugin for
 
 | Plugin | Focus | Agents | Commands | Skills |
 |--------|-------|--------|----------|--------|
-| **manim-viz** | 3Blue1Brown-style animations | 6 | 4 | 6 |
+| **mathviz** | 3Blue1Brown-style animations | 6 | 4 | 6 |
 
 ## Quick Start
 
@@ -21,7 +21,7 @@ A [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) plugin for
 ### 2. Install Plugin
 
 ```bash
-/plugin install manim-viz
+/plugin install mathviz
 ```
 
 ### 3. Install Dependencies
@@ -40,7 +40,7 @@ pip install manim
 
 ## Plugin Overview
 
-### Manim Visualization (`manim-viz`)
+### MathViz (`mathviz`)
 
 Create production-quality mathematical animations following 3Blue1Brown standards:
 
@@ -69,7 +69,7 @@ MathVizAgent/
 ├── .claude-plugin/
 │   └── marketplace.json              # Plugin manifest
 ├── plugins/
-│   └── manim-viz/
+│   └── mathviz/
 │       ├── agents/                   # 6 agents
 │       ├── commands/                 # 4 commands
 │       └── skills/                   # 6 skills
