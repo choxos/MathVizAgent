@@ -29,12 +29,14 @@ A [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) plugin for
 ```bash
 # macOS
 brew install py3cairo ffmpeg
-pip install manim
+pip install "manim>=0.20.1"
 
 # Ubuntu/Debian
 sudo apt install libcairo2-dev ffmpeg
-pip install manim
+pip install "manim>=0.20.1"
 ```
+
+> **Requires [Manim Community Edition](https://www.manim.community/) v0.20.1 or newer.** All patterns target the ManimCE API.
 
 ---
 
@@ -70,6 +72,8 @@ MathVizAgent/
 │   └── marketplace.json              # Plugin manifest
 ├── plugins/
 │   └── mathviz/
+│       ├── .claude-plugin/
+│       │   └── plugin.json           # Plugin metadata
 │       ├── agents/                   # 6 agents
 │       ├── commands/                 # 4 commands
 │       └── skills/                   # 6 skills

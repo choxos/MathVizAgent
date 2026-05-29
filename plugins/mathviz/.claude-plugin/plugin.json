@@ -1,7 +1,7 @@
 {
   "name": "mathviz",
   "displayName": "MathViz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create, review, and render production-quality mathematical animations using Manim Community Edition",
   "author": {
     "name": "Ahmad Sofi-Mahmudi",
