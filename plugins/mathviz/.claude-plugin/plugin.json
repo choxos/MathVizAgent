@@ -1,0 +1,27 @@
+{
+  "name": "mathviz",
+  "displayName": "MathViz",
+  "version": "1.0.0",
+  "description": "Create, review, and render production-quality mathematical animations using Manim Community Edition",
+  "author": {
+    "name": "Ahmad Sofi-Mahmudi",
+    "email": "choxos@users.noreply.github.com",
+    "url": "https://github.com/choxos"
+  },
+  "repository": "https://github.com/choxos/MathVizAgent",
+  "license": "MIT",
+  "keywords": [
+    "manim",
+    "animation",
+    "mathematics",
+    "visualization",
+    "3blue1brown",
+    "educational-video",
+    "python",
+    "latex",
+    "graphics",
+    "motion-graphics",
+    "mathematical-animation",
+    "data-visualization"
+  ]
+}

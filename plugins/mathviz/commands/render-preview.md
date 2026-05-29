@@ -103,7 +103,7 @@ If scenes use `next_section()`:
 manim -pql --save_sections scene.py MyScene
 
 # Skip to specific section
-manim -pql -n 0,2 scene.py MyScene  # Sections 0-2
+manim -pql -n 0,2 scene.py MyScene  # Render animations 0 through 2
 ```
 
 ## Video Concatenation
@@ -218,7 +218,7 @@ manim -ql scene.py MyScene
 
 ```bash
 # Check LaTeX installation
-manim --check
+manim checkhealth
 
 # Use verbose mode to see LaTeX errors
 manim -pql -v DEBUG scene.py MyScene

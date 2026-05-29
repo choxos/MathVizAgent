@@ -5,7 +5,7 @@ description: Core Manim concepts including Scene lifecycle, Mobject hierarchy, c
 
 # Manim Fundamentals
 
-Core concepts for Manim Community Edition v0.19.x.
+Core concepts for Manim Community Edition v0.20.1.
 
 ## Scene Lifecycle
 

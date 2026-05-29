@@ -36,16 +36,25 @@ label[1].set_color(BLUE)  # Color the math part
 ### tex_to_color_map
 
 ```python
-# Automatic coloring of matched substrings
+# Automatic coloring of matched substrings. Manim splits the string at each
+# key and compiles the pieces as separate LaTeX, so every key must sit at the
+# TOP LEVEL -- never inside a braced group such as \frac{...}{...} (that
+# orphans the braces and fails to compile). Color top-level tokens only:
 formula = MathTex(
-    r"P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}",
+    r"P(A \mid B) = P(B \mid A)\, P(A) / P(B)",
     tex_to_color_map={
         r"A": BLUE,
         r"B": ORANGE,
         r"P": GREEN,
-    }
+    },
 )
 ```
+
+> ⚠️ **Coloring inside fractions:** a `tex_to_color_map` key that lands inside
+> `\frac{...}{...}` (or any `{...}`) breaks LaTeX compilation. To color variables
+> in a fraction, use the multi-argument form and color submobjects directly
+> (see **Manual Coloring** below), e.g.
+> `MathTex(r"P(A|B)", r"=", r"\frac{P(B|A)P(A)}{P(B)}").set_color_by_tex("frac", GREEN)`.
 
 ### Manual Coloring
 

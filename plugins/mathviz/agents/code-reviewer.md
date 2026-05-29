@@ -285,7 +285,7 @@ class MyScene(MovingCameraScene):
 
 3. **Pre-compute static elements**
    - Calculate positions once, not every frame
-   - Use transformed_data for static transformations
+   - Apply static transformations once at creation rather than via per-frame updaters
 
 4. **Minimize mobject count**
    - Combine related elements into VGroups
